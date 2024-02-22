@@ -1,0 +1,102 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <h1>sass</h2>
+    <h3>por que scss?</h3>
+    <p>de que manera deberia manejar los estilos de mi aplicacion?</p>
+    <p>si tengo que solucionar estor problemas</p>
+    <ul>
+        <li>redundancia</li>
+        <li>organizacion</li>
+        <li>reutilizacion</li>
+        <li>especificidad</li>
+        <li>optimizacion</li>
+        <li>documentacion</li>
+        <li>buenas practicas</li>
+        <li>css no utilizado</li>
+        <li>tener varios archivos css y no saber cual de todos ellos tiene la clase que necesitas o si esta ya existe</li>
+    </ul>
+    <p>para no hacerlo largo sass es "a stylesheet language that’s compiled to CSS" que nos proporciona  variables, reglas anidadas, mixins y funciones</p>
+    <section>
+        <h3>scss</h3>
+        <p>antes de que la redundancia sea un problema de que manera organizamos todos nuestro archios css si tenemos muchos???, la respuesta. usar una arquitectura</p>
+        <ul>
+            <li>
+                <section>
+                    <h5>itcss</h5>
+                    <p>en nuestro caso particular usar la metodologia bem no era una opcion debido a la dependencia entre clases y elementos html, por lo que eliminar esta dependencia estaba entre nuestros objetivos, de alli a que surgiera la idea de implementar itcss.
+                    </p>
+                    <p>Entonces de que manera la implementamos?</p>
+                    <ul>
+                        <li>utilidades</li>
+                        <li>objetos</li>
+                        <li>componentes</li>
+                    </ul>
+                    <a href="https://apiumhub.com/es/tech-blog-barcelona/arquitectura-de-triangulo-invertido-para-css-itcss/">revisa este blog para aprender mas</a>
+                </section>
+            </li>
+            <li>
+                <section>
+                    <h5>mixins y funciones</h5>
+                    <p>si bien parte de la redundancia la eliminamos con el uso de una arquitecturah, los mixins y funciones nos ayudan aun mas.</p>
+                    <p>un mixin es una funcion que nos permite reutilizar codigo css, por ejemplo si tenemos un boton que queremos que tenga un padding de 10px y un color de fondo azul, podriamos hacer un mixin que nos permita reutilizar este codigo en cualquier otro boton que necesitemos, esto es especialmente util para crear mixins de grid y flex</p>
+                    <p>por otro lado las funciones reciben parametros lo que nos permite generalizar algunos de nuestros componentes, objetos e utilidades, por lo que podemos marcar como solucionadas las preguntas sobre redundancia, organizacion y reutilizacion</p>
+                </section>
+            </li>
+            <li>
+                <section>
+                    <h5>un archivo css o varios</h5>
+                    <p>al compilar scss a css tendremos un solo archivo, respecto al porque uno y no varios se debe principalmente al hecho de que existe un sistema de diseño que nos permite en gran medida reutilizar codigo teniendo relativamente un archivo de estilos liviano</p>
+                </section>
+            </li>
+
+            <li>
+                <section>
+                    <h5>minify css</h5>
+                    <p>ahora hablemos de la optimizacion de nuestro css, para ello podemos utilizar cualquier herramienta para minimizar nustros archivos css o directamente sass; <a href="https://stackoverflow.com/questions/8980398/sass-watch-with-automatic-minify" target="_blank">revisar</a>. </p>
+                    <!--
+                        https://stackoverflow.com/questions/8980398/sass-watch-with-automatic-minify
+                    -->
+                </section>
+            </li>
+            <li>
+                <section>
+                    <h5>documentacion y buentas practicas</h5>
+                    <p>posiblemente no lo hayas pensado pero seguir un estandar en tu codigo seguido de buenas practicas te va a permitir desarrollar mejor codigo.
+                        tambien y aunque no lo parazca el codigo css se comenta y es util que lo hagas en archivos largos.
+                        si quieres aprender mas de buenas practicas visita <a href="https://webdesign.tutsplus.com/css-documentation-best-practices--cms-30139a" target="_blank">este</a> enlace
+                </section>
+            </li>
+            <li>
+                <section>
+                    <h5>por que no tailwindcss?</h5>
+                    <p>Tailwind es uno de los frameworks css mas robustos y utiles en la actualidad, el por que de no usarlo se debe a los siguientes puntos</p>
+                    <ul>
+                        <li>el infierno de las clases "inline"
+                            <p>Cuando ves clases de tailwind en el html y son muchas, depurarlas es un infierno.
+                                Imagina eso en proyectos grandess</p>
+                        </li>
+                        <li>componentes
+                            <p>los componentes que existen de tailwind son de pago, y los creados con utilidades quieras o no te va a llevar al punto anterior</p>
+                        </li>
+                        <li>
+                            Te ves obligado a construir todo desde cero
+                            <p>al fin de cuenta estas usando css puro mediante clases</p>
+                        </li>
+                        <li>
+                            No es tan facil de mantener
+                            <p>a largo plazo es muy complejo de mantener</p>
+                        </li>
+                    </ul>
+                </section>
+            </li>
+            </p>
+        </ul>
+    </section>
+</body>
+</html>

@@ -1,0 +1,72 @@
+/*-------------------------------------------*\
+1). Palette
+    - https://paletton.com/#uid=53L070kp3wu00++7kPLG6kXZo0y
+\*-------------------------------------------*/
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  max-width: 1920px;
+  margin: 0px auto;
+  padding: 0px;
+  font-family: "system-ui", "Roboto", "Ubuntu", "sans-serif";
+}
+
+button,
+select,
+input[type=submit],
+input[type=reset],
+input[type=button],
+input[type=checkbox],
+input[type=range],
+input[type=radio] {
+  cursor: pointer;
+}
+
+[type=checkbox],
+[type=radio] {
+  display: initial;
+}
+
+input,
+button,
+textarea,
+select {
+  color: #1D1D1D;
+  background-color: #EFEFEF;
+  font-size: inherit;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+}
+
+button,
+input[type=submit],
+input[type=reset],
+input[type=button] {
+  background-color: #D0CFCF;
+}
+
+button:hover,
+input[type=submit]:hover,
+input[type=reset]:hover,
+input[type=button]:hover {
+  background: #9B9B9B;
+}
+
+a {
+  text-decoration: none;
+  color: #3063A9;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=styles.css.map */

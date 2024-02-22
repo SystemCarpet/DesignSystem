@@ -1,0 +1,66 @@
+/*-------------------------------------------*\
+1). Coding Standards
+    order of properties, separated by an enter
+
+    - box model:        display,width,heigth, padding, margin
+    - positioning:      position,top,left,transform
+    - utilities:        border, opacity, animations, transforms
+    - styles:           colors, background
+    - text properties:  generally "font" properties
+
+    Dont's (bad practices)
+    - Don’t use tabs for indentation.
+    - Don’t use under_scores or “camelCase” to name classes or IDs.
+    - Don’t use Class and ID names to reflect the underlying markup structure. .container-span and .small-header-div are bad names.
+    - Don’t use IDs and overly-specific selectors to style. Only use these when absolutely necessary (e.g. form controls or page anchors).
+
+    Do’s (good practices)
+    - Do use four (4) spaces for indentation.
+    - Do use dashes to separate words. dash-separated-names.
+    - Do think about CSS in terms of objects and use simple nouns as names. .global-alert and .badge are good names.
+    - Do use classes to facilitate reusability and reduce CSS selector specificity conflicts.
+2). Files and Folders
+    Read:
+        https://webdesign.tutsplus.com/css-documentation-best-practices--cms-30139a
+        [4] Avoid Long Stylesheets
+3). Movile first
+    Read:
+        https://zellwk.com/blog/how-to-write-mobile-first-css/
+4). Prefixes
+    u- for utility classes
+    o- for objects
+    c- for components
+    Example:
+        .u-hidden
+        .o-container
+        .c-button
+\*-------------------------------------------*/
+
+//Write multiple selectors on separate lines.
+.btn,
+.btn-link {}
+
+//Include one space between the selector and the opening brace.
+.selector {}
+
+//Use shorthand for hex values when possible.
+.selector {
+    color: #fff; //good
+    color: #ffffff; //bad
+}
+
+//Write hex values in lowercase.
+.selector {
+    color: #3D3D3D;//good
+    color: #3d3d3d;//bad
+}
+//Enclose URLs in single quotes. Generally, single quotes are preferred over double quotes, since they’re easier to type.
+.selector {
+    background-image: ('/image.png');//good
+    background-image: ("/image.png")//bad
+}
+//Don’t use units for zero (0) values, except for angles (deg) and time (s or ms).
+.selector {
+    margin: 0;//bad
+    margin: 0px;//good
+}

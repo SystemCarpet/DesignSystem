@@ -1,0 +1,41 @@
+button,
+select,
+input[type='submit'],
+input[type='reset'],
+input[type='button'],
+input[type='checkbox'],
+input[type='range'],
+input[type='radio'] {
+  cursor: pointer;
+}
+
+[type='checkbox'],
+[type='radio'] {
+  display: initial;
+}
+
+input,
+button,
+textarea,
+select {
+  color: $form-text;
+  background-color: $background;
+  font-size: inherit;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+}
+
+button,
+input[type='submit'],
+input[type='reset'],
+input[type='button'] {
+  background-color: $button-base;
+}
+button:hover,
+input[type='submit']:hover,
+input[type='reset']:hover,
+input[type='button']:hover {
+  background: $button-hover;
+}
