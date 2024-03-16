@@ -1,6 +1,5 @@
 {
     "dependencies": {
-        "destyle.css": "^4.0.1",
         "bootstrap": "^5.3.3"
     }
 }
